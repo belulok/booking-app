@@ -29,7 +29,7 @@ This is a React Native application developed for handling bookings. Built with E
     npm start
     ```
 
-#### Optional - If using WSL2 like me
+#### Optional - If using WSL2 (like me)
     ```
     npm start -- --tunnel
     ```
