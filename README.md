@@ -27,6 +27,17 @@ This is a React Native application developed for handling bookings. Built with E
     npm start
     ```
 
+**Optional - If using WSL2 like me**
+    ```
+    npm start -- --tunnel
+    ```
+
+This will ask to install the @expo/ngrok package. Once that is done, you'll see the Metro is waiting message has a full URL instead of just an IP address. Scan the QR code and Expo Go will connect through the tunnel. This works because the tunnel is exposed to the internet, instead of just your local network.
+
+WSL2, on the other hand, is a virtualized environment, using a virtual NIC behind a virtual Hyper-V switch. The WSL2 network is NAT'd behind/inside the Windows network, which is why you can't see it from other devices on the network.
+
+WSL2 does provide a feature known as "local forwarding" that allows the Windows host itself to access WSL2 through the localhost address. However, that doesn't extend to other devices on the network.
+
 **Running the App**
 On a Physical Device: Open the Expo Go app and scan the QR code provided in the terminal.
 On an Emulator/Simulator: With the Expo development server running, press i to open the iOS Simulator or a to open the Android Emulator.
@@ -41,11 +52,3 @@ On an Emulator/Simulator: With the Expo development server running, press i to o
 **Optional Features**
 - Sorting and Filtering: Users can sort bookings by price, check-in, or check-out date and filter by deposit paid.
 - Updating and Deleting Bookings: Enables users to modify or remove their bookings.
-
-**Additional Notes**
-The app uses mock data for bookings. Integration with a real API would require additional setup and authentication.
-For any issues or contributions, please open an issue or submit a pull request.
-
-
-
-
