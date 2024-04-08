@@ -30,9 +30,9 @@ This is a React Native application developed for handling bookings. Built with E
     ```
 
 #### Optional - If using WSL2 (like me)
-    ```
-    npm start -- --tunnel
-    ```
+```
+npm start -- --tunnel
+```
 
 This will ask to install the @expo/ngrok package. Once that is done, you'll see the Metro is waiting message has a full URL instead of just an IP address. Scan the QR code and Expo Go will connect through the tunnel. This works because the tunnel is exposed to the internet, instead of just your local network.
 
