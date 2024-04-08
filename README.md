@@ -14,6 +14,8 @@ This is a React Native application developed for handling bookings. Built with E
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/belulok/booking-app.git
+   ```
+   ```
    cd bookings-app
    ```
 
@@ -27,7 +29,7 @@ This is a React Native application developed for handling bookings. Built with E
     npm start
     ```
 
-**Optional - If using WSL2 like me**
+#### Optional - If using WSL2 like me
     ```
     npm start -- --tunnel
     ```
